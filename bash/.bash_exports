@@ -6,13 +6,17 @@ export EDITOR="atom"
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
 
-# Increase the maximum number of lines contained in the history file
-# (default is 500)
-export HISTFILESIZE=10000
+# Keep a reasonably long history.
+export HISTSIZE=4096;
 
-# Increase the maximum number of commands to remember
-# (default is 500)
-export HISTSIZE=10000
+# Keep even more history lines inside the file, so we can still look up
+# previous commands without needlessly cluttering the current shell's history.
+export HISTFILESIZE=16384;
+
+# Keep track of the time the commands were executed.
+# The xterm colour escapes require special care when piping; e.g. "| less -R".
+export HISTTIMEFORMAT="${FG_BLUE}${FONT_BOLD}%Y/%m/%d %H:%M:%S${FONT_RESET}  ";
+
 
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
