@@ -1,0 +1,77 @@
+# log files
+*.log
+*.logs
+
+# OSX generated files
+._*
+.apdisk
+.AppleDesktop
+.AppleDouble
+.AppleDB
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.DS_Store?
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Network Trash Folder
+Temporary Items
+Thumbs.db
+
+# vim swap files
+*.swp
+
+# dotenv environment variables file
+.env
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# node Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+
+# python Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# vagrant
+.vagrant/
+
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
