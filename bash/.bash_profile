@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. ~/.bash_prompt     # customized prompt
+source ~/.bash_aliases    # bash aliases
+source ~/.bash_exports    # common variable exports
+#source ~/.bash_functions  # useful functions, but did not find any:))
+source ~/.bash_options    # bash options
+source ~/.bash_externals  # external programs config like nvm, virtualenv, ...
+
+echo "It's done."
