@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 source ~/.bash_prompt      # customized prompt
 source ~/.bash_aliases     # bash aliases
