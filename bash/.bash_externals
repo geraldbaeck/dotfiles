@@ -9,8 +9,8 @@ source /usr/local/opt/autoenv/activate.sh
 
 # virtualenvwrapper settings
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export WORKON_HOME=$HOME/Dropbox/dev/.virtualenvs
-export PROJECT_HOME=$HOME/Dropbox/dev
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="$PATH:`yarn global bin`"
@@ -25,8 +25,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 git config --global core.excludesfile ~/.gitignore_global
 
 # Add tab completion for bash completion 2
-if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-  source "$(brew --prefix)/share/bash-completion/bash_completion";
-elif [ -f /etc/bash_completion ]; then
-  source /etc/bash_completion;
-fi;
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    source $(brew --prefix)/share/bash-completion/bash_completion
+fi
