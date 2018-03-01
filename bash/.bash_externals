@@ -21,6 +21,9 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+# flutter
+export PATH=$HOME/flutter/bin:$PATH
+
 # git
 git config --global core.excludesfile ~/.gitignore_global
 
