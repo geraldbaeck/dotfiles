@@ -18,7 +18,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PATH="$PATH:`yarn global bin`"
+# export PATH="$PATH:`yarn global bin`"
 export PYTHONPATH="./.pip:$PYTHONPATH"
 
 # android SDK
@@ -33,6 +33,7 @@ export PATH=$HOME/flutter/bin:$PATH
 git config --global core.excludesfile ~/.gitignore_global
 
 # Add tab completion for bash completion 2
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-    source $(brew --prefix)/share/bash-completion/bash_completion
-fi
+# Only for OSX
+# if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+#     source $(brew --prefix)/share/bash-completion/bash_completion
+# fi
