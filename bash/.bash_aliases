@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# who am I
+printf 'Running %s\n' "$BASH_SOURCE"
+
 alias atom="atom ./"
 
 # A better list all

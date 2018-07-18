@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
 
-# node.js is loaded via nvm
+# who am I
+printf 'Running %s\n' "$BASH_SOURCE"
+
+# node.js is loaded via nvm 
 export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # automatically load .env file into evironment
-source /usr/local/opt/autoenv/activate.sh
+# source /usr/local/opt/autoenv/activate.sh  # OSX
+source /home/geraldbaeck/.local/bin/activate.sh  # Windows 10 WSL
 
 # virtualenvwrapper settings
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3  # OSX
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3  # Windows 10 WSL
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PATH="$PATH:`yarn global bin`"
+# export PATH="$PATH:`yarn global bin`"
 export PYTHONPATH="./.pip:$PYTHONPATH"
 
 # android SDK
@@ -21,10 +26,14 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+# flutter
+export PATH=$HOME/flutter/bin:$PATH
+
 # git
 git config --global core.excludesfile ~/.gitignore_global
 
 # Add tab completion for bash completion 2
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-    source $(brew --prefix)/share/bash-completion/bash_completion
-fi
+# Only for OSX
+# if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+#     source $(brew --prefix)/share/bash-completion/bash_completion
+# fi
