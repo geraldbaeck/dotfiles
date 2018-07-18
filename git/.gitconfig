@@ -42,7 +42,7 @@
 
 [color "branch"]
     current = yellow reverse
-    local = yello
+    local = yellow
     remote = green
 
 [color "diff"]
@@ -59,7 +59,7 @@
 [core]
     autocrlf = input
     compression = 9
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/geraldback/.gitignore_global
     filemode = false
 
 [user]
