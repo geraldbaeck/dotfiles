@@ -39,7 +39,7 @@ brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 brew install gnu-indent --with-default-names
 brew install gnu-which --with-default-names
-#brew install gnu-grep --with-default-names
+brew install gnu-grep --with-default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -147,15 +147,20 @@ FONTS=(
 )
 brew cask install ${FONTS[@]}
 
+echo "Updating pip"
+pip install --update pip
+pip3 install --update pip
+
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
     ipython
     virtualenv
     virtualenvwrapper
 )
-sudo pip install ${PYTHON_PACKAGES[@]}
+pip install ${PYTHON_PACKAGES[@]}
+pip3 install ${PYTHON_PACKAGES[@]}
 
-# final brew update
+# final brew upgrade
 brew upgrade
 
 # echo "Installing Ruby gems"
