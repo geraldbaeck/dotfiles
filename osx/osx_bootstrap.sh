@@ -66,6 +66,7 @@ PACKAGES=(
     htop
     httpie
     lynx
+    mas
     markdown
     mercurial
     npm
@@ -162,6 +163,13 @@ pip3 install ${PYTHON_PACKAGES[@]}
 
 # final brew upgrade
 brew upgrade
+
+echo "Installing App Store Apps"
+mas signin gerald@baeck.at
+mas lucky xcode 
+mas lucky pages 
+mas lucky numbers 
+
 
 # echo "Installing Ruby gems"
 # RUBY_GEMS=(
