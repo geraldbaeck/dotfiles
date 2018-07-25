@@ -60,6 +60,7 @@ PACKAGES=(
     awscli
     cmake
     curl
+    duti
     ffmpeg
     gettext
     git
