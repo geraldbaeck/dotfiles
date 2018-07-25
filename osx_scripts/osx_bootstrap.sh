@@ -396,4 +396,18 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
+
+###############################################################################
+# Other stuff                                                                 #
+###############################################################################
+# make  chrome the default browser
+./ChromeDefaultBrowser.sh  # seems to work only once
+# Create the necessary symbolic link between the `osx_scripts` and `HOME` directory.
+ln -fs "${PWD}" "${HOME}"
+# create a login and logout hook
+# see https://support.apple.com/de-at/HT2420
+defaults write com.apple.loginwindow LoginHook hooks/login_hook.sh
+defaults write com.apple.loginwindow LogoutHook hooks/logout_hook.sh
+
+
 echo "Bootstrapping complete"
