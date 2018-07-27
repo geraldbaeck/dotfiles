@@ -12,4 +12,5 @@ for f in bash/* git/* ; do
   echo "  `basename ${f}` symlinked to "
   echo "    ${PWD}/${f}"
 done
+sudo ln -fs "${PWD}/bin" "${HOME}/Library/"  # symlink to ~/Library/bin for custom scripts
 echo "Linking done."
