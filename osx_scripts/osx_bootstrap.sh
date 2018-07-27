@@ -412,5 +412,4 @@ ln -fs "${PWD}" "${HOME}"
 defaults write com.apple.loginwindow LoginHook hooks/login_hook.sh
 defaults write com.apple.loginwindow LogoutHook hooks/logout_hook.sh
 
-
 echo "Bootstrapping complete"
