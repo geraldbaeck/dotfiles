@@ -78,6 +78,7 @@ PACKAGES=(
     python3
     pypy
     rename
+    speedtest-cli
     ssh-copy-id
     terminal-notifier
     tmux
@@ -101,6 +102,7 @@ CASKS=(
     anki
     arq
     atom
+    bitbar
     caffeine
     discord
     docker

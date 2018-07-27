@@ -4,7 +4,7 @@
 printf 'Running %s\n' "$BASH_SOURCE"
 
 # Set default editor to vscode
-export EDITOR="atom"
+export EDITOR="nano"
 
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
