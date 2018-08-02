@@ -102,6 +102,7 @@ CASKS=(
     anki
     arq
     atom
+    bartender
     bitbar
     caffeine
     discord
