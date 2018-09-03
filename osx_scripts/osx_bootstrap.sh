@@ -110,6 +110,7 @@ CASKS=(
     dropbox
     expo-xde
     firefox
+    flowsync
     flux
     gimp
     google-chrome
