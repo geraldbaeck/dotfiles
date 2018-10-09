@@ -96,6 +96,7 @@ brew cleanup
 
 CASKS=(
     1password
+    airflow
     android-file-transfer
     android-sdk
     android-studio
