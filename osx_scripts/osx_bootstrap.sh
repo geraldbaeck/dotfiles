@@ -123,6 +123,7 @@ CASKS=(
     libreoffice
     little-snitch
     micro-snitch
+    nightowl
     parallels
     postman
     skype
