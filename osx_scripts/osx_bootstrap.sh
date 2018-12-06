@@ -20,14 +20,14 @@
 
 echo "Starting bootstrapping"
 
-# get sudo for all the things
-sudo -v
-
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
     echo "Installing homebrew..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+# stop brew from sending analytics
+brew analytics off
 
 # Update homebrew recipes
 brew update
@@ -39,7 +39,7 @@ brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 brew install gnu-indent --with-default-names
 brew install gnu-which --with-default-names
-brew install gnu-grep --with-default-names
+# brew install gnu-grep --with-default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -105,7 +105,7 @@ CASKS=(
     atom
     bartender
     bitbar
-    caffeine
+    detectx
     discord
     docker
     dropbox
@@ -113,26 +113,28 @@ CASKS=(
     firefox
     flux
     gimp
+    github
     google-chrome
-    google-drive
-    gpgtools
     hyper
     iina
     iterm2
     java
+    keepingyouawake
     libreoffice
     little-snitch
     micro-snitch
     nightowl
     parallels
     postman
+    signal
     skype
     slack
+    homebrew/cask-drivers/sonos
     spectacle
     spotify
     teamviewer
-    torbrowser
-    tower
+    tor-browser
+    tower2
     transmission
     vagrant
     virtualbox
@@ -148,15 +150,14 @@ brew cask install ${CASKS[@]}
 echo "Installing fonts..."
 brew tap caskroom/fonts
 FONTS=(
-    font-inconsolidata
     font-roboto
     font-clear-sans
 )
 brew cask install ${FONTS[@]}
 
 echo "Updating pip"
-pip install --update pip
-pip3 install --update pip
+pip install --upgrade pip
+pip3 install --upgrade pip
 
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
@@ -189,7 +190,7 @@ echo "Installing global npm packages..."
 npm install npm@latest -g
 npm install gulp -g
 npm install marked -g
-npm npm-check-updates -g
+npm install npm-check-updates -g
 
 echo "Configuring OSX..."
 
