@@ -66,6 +66,7 @@ PACKAGES=(
     git
     htop
     httpie
+    jsonnet
     lynx
     mas
     markdown
@@ -162,6 +163,7 @@ pip3 install --upgrade pip
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
     ipython
+    pipenv
     virtualenv
     virtualenvwrapper
 )
