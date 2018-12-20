@@ -189,10 +189,8 @@ mas lucky numbers
 # sudo gem install ${RUBY_GEMS[@]}
 
 echo "Installing global npm packages..."
-npm install npm@latest -g
-npm install gulp -g
-npm install marked -g
-npm install npm-check-updates -g
+npm install --global npm@latest
+npm install --global generate-license gulp marked npm-check-updates
 
 echo "Configuring OSX..."
 
