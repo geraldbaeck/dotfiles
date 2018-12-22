@@ -1,0 +1,4 @@
+Host *.gitlab.com
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/Dropbox/keys/id_ed25516_gitlab
