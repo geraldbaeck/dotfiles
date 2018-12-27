@@ -75,3 +75,6 @@ eggs/
 .dropbox
 .dropbox.attr
 .dropbox.cache
+
+# Visual Studio Code 
+.vscode/*
