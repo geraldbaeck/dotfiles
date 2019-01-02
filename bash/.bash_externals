@@ -37,6 +37,6 @@ eval "$(pyenv init -)"
 
 # Add tab completion for bash completion 2
 # Only for OSX
-# if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-#     source $(brew --prefix)/share/bash-completion/bash_completion
-# fi
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    source $(brew --prefix)/share/bash-completion/bash_completion
+fi
