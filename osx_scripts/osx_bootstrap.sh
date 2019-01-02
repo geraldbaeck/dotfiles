@@ -75,6 +75,7 @@ PACKAGES=(
     nvm
     openssl
     pkg-config
+    pyenv
     python
     python3
     pypy

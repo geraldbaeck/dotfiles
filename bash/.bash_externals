@@ -32,6 +32,9 @@ export PATH=$HOME/Library/flutter/bin:$PATH
 # git
 git config --global core.excludesfile ~/.gitignore_global
 
+# pyenv  # manage different python versions
+eval "$(pyenv init -)"
+
 # Add tab completion for bash completion 2
 # Only for OSX
 # if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
