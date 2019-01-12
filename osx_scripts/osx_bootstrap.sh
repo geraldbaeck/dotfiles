@@ -114,6 +114,7 @@ CASKS=(
     expo-xde
     firefox
     flux
+    font-envy-code-r
     gimp
     github
     google-chrome

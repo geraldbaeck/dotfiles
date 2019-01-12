@@ -51,4 +51,5 @@ fi
 # Add completion for kitty terminal
 if [ "$TERM" = "xterm-kitty" ]; then
     source <(kitty + complete setup bash)
+    export KITTY_CONFIG_DIRECTORY="$HOME/.config/kitty/kitty.conf"
 fi
