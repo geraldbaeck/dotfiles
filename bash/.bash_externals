@@ -10,6 +10,7 @@ export NVM_DIR="~/.nvm"
 # automatically load .env file into evironment
 source /usr/local/opt/autoenv/activate.sh  # OSX
 # source /home/geraldbaeck/.local/bin/activate.sh  # Windows 10 WSL
+export AUTOENV_ENABLE_LEAVE=true
 
 # virtualenvwrapper settings
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3  # OSX
