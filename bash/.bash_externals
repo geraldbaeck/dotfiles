@@ -55,5 +55,7 @@ if [ "$TERM" = "xterm-kitty" ]; then
     export KITTY_CONFIG_DIRECTORY="$HOME/.config/kitty/kitty.conf"
 fi
 
+eval "$(pipenv --completion)"
+
 # add all stored ssh keys
 ssh-add -A
